@@ -10,7 +10,7 @@ interface CardProops{
 
 const Card:FC<CardProops> = ({backgroundColor,width,height,children,border}) => {
     return(
-       <div style={{backgroundColor,width,height,border}}>
+       <div className="cardT" style={{backgroundColor,width,height,border}}>
           {children}
        </div>
     )
