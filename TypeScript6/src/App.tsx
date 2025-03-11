@@ -14,7 +14,7 @@ function App() {
         
         <Card width={700} height={300} backgroundColor='black' border='3px solid red'>
           <h1>карточка</h1>
-          {/* <EventExample /> */}
+          <EventExample />
         </Card>
       </div>
     </>
