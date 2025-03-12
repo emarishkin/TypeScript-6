@@ -18,7 +18,7 @@ const HandleClick = (e:React.MouseEvent<HTMLButtonElement>) => {
         <>
         <input value={value} onChange={ChangeHandler}  type="text" />
         <button onClick={HandleClick}>click</button>
-        <p>{click && value}</p>
+        <p>{click ? value : <div style={{backgroundColor:'black'}}>ПОКА ЗДЕСЬ ПУСТО</div>}</p>
         </>
     )
 }
