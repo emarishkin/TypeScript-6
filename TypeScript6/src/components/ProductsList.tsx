@@ -13,7 +13,7 @@ const ProductsList:FC<ProductsList> = ({products})=>{
         {products.map((product)=>
         <div key={product.id} style={{border:'2px solid black'}}>
           <h3>{product.id}.{product.title}</h3> 
-          <img style={{width:20, height:20}} src={product.image} alt={product.title} />       
+          <img style={{width:100, height:100}} src={product.image} alt={product.title} />       
           <p>{product.description}</p>
           <p style={{fontWeight:'bold'}}>{product.price}$</p>
         </div>)}

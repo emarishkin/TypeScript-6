@@ -4,6 +4,8 @@ import Card from './components/Card'
 import EventExample from './components/EventExample'
 import ProductsList from './components/ProductsList'
 import { products } from './products'
+import UserList from './components/UserList'
+import { users } from './users'
 
 function App() {
 
@@ -32,7 +34,9 @@ function App() {
         </div>
       </div>}
  
-    {twoClick && <p>Пока тут пусто</p>}
+    {twoClick && <div>
+      <UserList users={users} />
+      </div>}
     </>
   )
 }
